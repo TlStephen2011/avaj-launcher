@@ -1,6 +1,6 @@
 package za.co.wethinkcode.weather;
 
-import coordinates.Coordinates;
+import za.co.wethinkcode.coordinates.Coordinates;
 
 public class WeatherTower extends Tower {
 	public String getWeather(Coordinates coordinates) {
@@ -9,5 +9,5 @@ public class WeatherTower extends Tower {
 	
 	public void changeWeather() {
 		this.conditionsChanged();
-	}
+	}	
 }

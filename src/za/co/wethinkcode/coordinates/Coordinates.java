@@ -1,4 +1,4 @@
-package coordinates;
+package za.co.wethinkcode.coordinates;
 
 public class Coordinates {
 	private int longitude;

@@ -1,20 +1,29 @@
 package za.co.wethinkcode.weather;
 
-import java.util.List;
+import java.util.ArrayList;
 import za.co.wethinkcode.aircrafts.Flyable;
+import za.co.wethinkcode.utilities.Logger;
 
 public abstract class Tower {
-	private List<Flyable> observers;
+	private ArrayList<Flyable> observers = new ArrayList<Flyable>();
 	
 	public void register(Flyable flyable) {
-		//TODO: add flyable to observers list
+		this.observers.add(flyable);
 	}
 	
 	public void unregister(Flyable flyable) {
-		//TODO: remove flyable from observers
+		for (Flyable aircraft : observers) {
+			if (flyable.equals(aircraft)) {
+				//TODO: update logged text
+				Logger.logIt("Landed");
+				this.observers.remove(aircraft);
+			}
+		}
 	}
 	
 	protected void conditionsChanged() {
-		//TODO: update all observers
+		for (Flyable flyable : observers) {
+			flyable.updateConditions();
+		}
 	}
 }

@@ -1,4 +1,4 @@
-package utilities;
+package za.co.wethinkcode.utilities;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;

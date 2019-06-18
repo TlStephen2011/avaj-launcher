@@ -1,3 +1,148 @@
-Helicopter#Apache(12346): Has successfully registered to the weather tower.
-Helicopter#Apache(12346): Has successfully registered to the weather tower.
-Helicopter#Apache(12346): Has successfully registered to the weather tower.
+Helicopter#B1(12346): Has successfully registered to the weather tower.
+Helicopter#B2(12347): Has successfully registered to the weather tower.
+Helicopter#J1(12348): Has successfully registered to the weather tower.
+Helicopter#H1(12349): Has successfully registered to the weather tower.
+Helicopter#H2(12350): Has successfully registered to the weather tower.
+Helicopter#H3(12351): Has successfully registered to the weather tower.
+Helicopter#B3(12352): Has successfully registered to the weather tower.
+Helicopter#J2(12353): Has successfully registered to the weather tower.
+Helicopter#H4(12354): Has successfully registered to the weather tower.
+Brrrrr, snowy
+Foggy
+Foggy
+Sunny
+Sunny
+Raining
+Brrrrr, snowy
+Brrrrr, snowy
+Raining
+Raining
+Sunny
+Brrrrr, snowy
+Sunny
+Foggy
+Sunny
+Sunny
+Brrrrr, snowy
+Sunny
+Foggy
+Brrrrr, snowy
+Brrrrr, snowy
+Sunny
+Raining
+Foggy
+Sunny
+Foggy
+Brrrrr, snowy
+Foggy
+Brrrrr, snowy
+Brrrrr, snowy
+Sunny
+Sunny
+Sunny
+Brrrrr, snowy
+Foggy
+Raining
+Sunny
+Brrrrr, snowy
+Brrrrr, snowy
+Brrrrr, snowy
+Raining
+Foggy
+Sunny
+Sunny
+Brrrrr, snowy
+Raining
+Brrrrr, snowy
+Brrrrr, snowy
+Raining
+Sunny
+Foggy
+Brrrrr, snowy
+Brrrrr, snowy
+Foggy
+Brrrrr, snowy
+Brrrrr, snowy
+Brrrrr, snowy
+Foggy
+Raining
+Foggy
+Sunny
+Raining
+Foggy
+Sunny
+Landed
+Helicopter#B1(12346): Has successfully registered to the weather tower.
+Helicopter#B2(12347): Has successfully registered to the weather tower.
+Helicopter#J1(12348): Has successfully registered to the weather tower.
+Helicopter#H1(12349): Has successfully registered to the weather tower.
+Helicopter#H2(12350): Has successfully registered to the weather tower.
+Helicopter#H3(12351): Has successfully registered to the weather tower.
+Helicopter#B3(12352): Has successfully registered to the weather tower.
+Helicopter#J2(12353): Has successfully registered to the weather tower.
+Helicopter#H4(12354): Has successfully registered to the weather tower.
+Raining
+Foggy
+Foggy
+Brrrrr, snowy
+Sunny
+Brrrrr, snowy
+Brrrrr, snowy
+Brrrrr, snowy
+Sunny
+Raining
+Sunny
+Brrrrr, snowy
+Raining
+Brrrrr, snowy
+Foggy
+Brrrrr, snowy
+Raining
+Sunny
+Brrrrr, snowy
+Brrrrr, snowy
+Brrrrr, snowy
+Foggy
+Sunny
+Foggy
+Sunny
+Foggy
+Brrrrr, snowy
+Sunny
+Brrrrr, snowy
+Brrrrr, snowy
+Sunny
+Sunny
+Raining
+Brrrrr, snowy
+Landed
+Raining
+Brrrrr, snowy
+Brrrrr, snowy
+Brrrrr, snowy
+Brrrrr, snowy
+Raining
+Sunny
+Raining
+Brrrrr, snowy
+Foggy
+Raining
+Brrrrr, snowy
+Brrrrr, snowy
+Brrrrr, snowy
+Raining
+Brrrrr, snowy
+Sunny
+Sunny
+Brrrrr, snowy
+Foggy
+Brrrrr, snowy
+Brrrrr, snowy
+Brrrrr, snowy
+Brrrrr, snowy
+Raining
+Brrrrr, snowy
+Sunny
+Brrrrr, snowy
+Landed
+Raining

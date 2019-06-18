@@ -1,6 +1,6 @@
 package za.co.wethinkcode.aircrafts;
 
-import coordinates.Coordinates;
+import za.co.wethinkcode.coordinates.Coordinates;
 
 public abstract class Aircraft {
 	protected long id;
