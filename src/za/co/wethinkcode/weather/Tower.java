@@ -1,7 +1,6 @@
 package za.co.wethinkcode.weather;
 
 import java.util.ArrayList;
-import java.util.Iterator;
 
 import za.co.wethinkcode.aircrafts.Flyable;
 import za.co.wethinkcode.utilities.Logger;
