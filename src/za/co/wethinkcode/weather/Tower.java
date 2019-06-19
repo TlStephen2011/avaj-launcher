@@ -9,14 +9,14 @@ public abstract class Tower {
 	private ArrayList<Flyable> observers = new ArrayList<Flyable>();
 	
 	public void register(Flyable flyable) {
+		//TODO tower says flyable registers
 		this.observers.add(flyable);
 	}
 	
 	public void unregister(Flyable flyable) {		
+		//TODO tower says flyable unregisters
 		for (Flyable aircraft : this.observers) {
 			if (flyable == aircraft) {
-				//TODO: update logged text
-				Logger.logIt("Landed");
 				this.observers.remove(aircraft);
 				break;
 			}

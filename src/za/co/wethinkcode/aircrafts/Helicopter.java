@@ -16,35 +16,41 @@ public class Helicopter extends Aircraft implements Flyable {
 	public void updateConditions() {
 		String weather = WeatherProvider.getProvider().getCurrentWeather(this.coordinates);
 		
-		//TODO: check height constraint values and proper log messages
+		//TODO: proper log messages
+		
+		int lon = this.coordinates.getLongitude();
+		int lat = this.coordinates.getLatitude();
+		int height = this.coordinates.getHeight();
+		
 		if (weather.equals("RAIN")) {
-			Coordinates x = new Coordinates(this.coordinates.getLongitude() + 5,
-											this.coordinates.getLatitude(),
-											this.coordinates.getHeight());
+			Coordinates x = new Coordinates(lon + 5,
+											lat,
+											height);
 			Logger.logIt("Raining");
 			this.coordinates = x;
 		} else if (weather.equals("SNOW")) {
-			Coordinates x = new Coordinates(this.coordinates.getLongitude(),
-					this.coordinates.getLatitude(),
-					this.coordinates.getHeight() - 12);
+			Coordinates x = new Coordinates(lon,
+											lat,
+											height - 12 < 0 ? 0 : height - 12);
 			Logger.logIt("Brrrrr, snowy");
 			this.coordinates = x;
 		} else if (weather.equals("SUN")) {
-			Coordinates x = new Coordinates(this.coordinates.getLongitude() + 10,
-					this.coordinates.getLatitude(),
-					this.coordinates.getHeight() + 2);
+			Coordinates x = new Coordinates(lon + 10,
+											lat,
+											height + 2 > 100 ? 100 : height + 2);
 			Logger.logIt("Sunny");
 			this.coordinates = x;
 		} else if (weather.equals("FOG")) {
-			Coordinates x = new Coordinates(this.coordinates.getLongitude() + 1,
-					this.coordinates.getLatitude(),
-					this.coordinates.getHeight());
+			Coordinates x = new Coordinates(lon + 1,
+											lat,
+											height);
 			Logger.logIt("Foggy");
 			
 			this.coordinates = x;
 		}
 		
-		if (this.coordinates.getHeight() <= 0) {
+		if (this.coordinates.getHeight() == 0) {
+			Logger.logIt("Unregistering from tower");
 			weatherTower.unregister(this);
 		}
 	}
