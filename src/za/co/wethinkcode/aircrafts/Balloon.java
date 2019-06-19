@@ -9,13 +9,11 @@ public class Balloon extends Aircraft implements Flyable {
 		super(name, coordinates);
 	}
 
-	@Override
 	public void updateConditions() {
 		// TODO Auto-generated method stub
 
 	}
 
-	@Override
 	public void registerTower(WeatherTower weatherTower) {
 		// TODO Auto-generated method stub
 

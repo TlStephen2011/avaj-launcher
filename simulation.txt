@@ -1,3 +1,0 @@
-Helicopter#B1(12346): Has successfully registered to the weather tower.
-Brrrrr, snowy
-Landed

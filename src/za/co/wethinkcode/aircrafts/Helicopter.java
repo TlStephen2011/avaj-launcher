@@ -13,7 +13,6 @@ public class Helicopter extends Aircraft implements Flyable {
 		super(name, coordinates);
 	}
 	
-	@Override
 	public void updateConditions() {
 		String weather = WeatherProvider.getProvider().getCurrentWeather(this.coordinates);
 		
@@ -50,7 +49,6 @@ public class Helicopter extends Aircraft implements Flyable {
 		}
 	}
 
-	@Override
 	public void registerTower(WeatherTower weatherTower) {
 		this.weatherTower = weatherTower;
 		weatherTower.register(this);
