@@ -19,21 +19,22 @@ public class WeatherProvider {
 	}
 	
 	public String getCurrentWeather(Coordinates coordinates) {
-		String[] newWeatherArray;
-		if (this.weather.length != 0)
-			newWeatherArray = Arrays.copyOf(weather, weather.length + 1);
-		else
-			newWeatherArray = new String[1];
-		
-		Random rand = new Random();
-		int lon = coordinates.getLongitude() * (rand.nextInt(10) + 1);
-		int lat = coordinates.getLatitude() * (rand.nextInt(10) + 1);
-		int height = coordinates.getHeight() * (rand.nextInt(10) + 1);
-		
-		String [] conditions = new String[] {"SNOW", "RAIN", "SUN", "FOG"};
-		int randValue = (lon + lat + height) % 4;
-		newWeatherArray[weather.length] = conditions[randValue];
-		weather = newWeatherArray;
-		return weather[weather.length - 1];
+//		String[] newWeatherArray;
+//		if (this.weather.length != 0)
+//			newWeatherArray = Arrays.copyOf(weather, weather.length + 1);
+//		else
+//			newWeatherArray = new String[1];
+//		
+//		Random rand = new Random();
+//		int lon = coordinates.getLongitude() * (rand.nextInt(10) + 1);
+//		int lat = coordinates.getLatitude() * (rand.nextInt(10) + 1);
+//		int height = coordinates.getHeight() * (rand.nextInt(10) + 1);
+//		
+//		String [] conditions = new String[] {"SNOW", "RAIN", "SUN", "FOG"};
+//		int randValue = (lon + lat + height) % 4;
+//		newWeatherArray[weather.length] = conditions[randValue];
+//		weather = newWeatherArray;
+//		return weather[weather.length - 1];
+		return "SNOW";
 	}
 }

@@ -12,17 +12,18 @@ public abstract class Tower {
 	}
 	
 	public void unregister(Flyable flyable) {
-		for (Flyable aircraft : observers) {
-			if (flyable.equals(aircraft)) {
+		for (Flyable aircraft : this.observers) {
+			if (flyable == aircraft) {
 				//TODO: update logged text
 				Logger.logIt("Landed");
 				this.observers.remove(aircraft);
+				break;
 			}
 		}
 	}
 	
 	protected void conditionsChanged() {
-		for (Flyable flyable : observers) {
+		for (Flyable flyable : this.observers) {
 			flyable.updateConditions();
 		}
 	}

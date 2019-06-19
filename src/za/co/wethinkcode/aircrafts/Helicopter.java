@@ -41,10 +41,11 @@ public class Helicopter extends Aircraft implements Flyable {
 					this.coordinates.getLatitude(),
 					this.coordinates.getHeight());
 			Logger.logIt("Foggy");
+			
 			this.coordinates = x;
 		}
 		
-		if (this.coordinates.getHeight() == 0) {
+		if (this.coordinates.getHeight() <= 0) {
 			weatherTower.unregister(this);
 		}
 	}

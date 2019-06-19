@@ -44,7 +44,7 @@ public class JetPlane extends Aircraft implements Flyable {
 			this.coordinates = x;
 		}
 		
-		if (this.coordinates.getHeight() == 0) {
+		if (this.coordinates.getHeight() <= 0) {
 			weatherTower.unregister(this);
 		}
 		
