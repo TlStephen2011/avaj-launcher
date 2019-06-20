@@ -46,10 +46,17 @@ public class Simulator {
 			}
 			
 			for (int i = 1; i < lines.size(); i++) {
-				String [] splitString = it.next().split(" ");
+				String [] splitString = it.next().split("\\s+");
 				
 				if (splitString.length != 5) {
 					System.out.println("Invalid scenario file");
+					return;
+				}
+				
+				if (!splitString[0].contentEquals("Balloon") &&
+					!splitString[0].contentEquals("Helicopter") &&
+					!splitString[0].contentEquals("JetPlane")) {
+					System.out.println("Invalid aircraft type detected");
 					return;
 				}
 				
@@ -74,7 +81,7 @@ public class Simulator {
 					System.out.println("Invalid coordinates");
 					return;
 				}
-				
+
 				aircrafts.add(AircraftFactory.newAircraft(splitString[0], splitString[1], lon, lat, height));				
 			}
 			
